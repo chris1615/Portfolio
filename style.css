@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
+    background-position:cent;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-left: 5%;
+    padding-right: 6%;
+}
+
+span{
+    color: orange;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: orange;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+.about{
+    color: white;
+}
+.content>h2{
+    color: orange!important;
+    font-size: 30px;
+    float: left;
+
+}
+
+.images{
+    width:85%;
+    height: 70vh;
+    position: relative;
+    bottom: 0;
+
+}
+.images img{
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.orange{
+    width: 70%!important;
+    height: 500px!important;
+}
+.self{
+    height: 100%!important;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .main {
+        height: 900px; /* Adjust height for smaller screens */
+
+  
+    }
+    nav .logo{
+        display: block;
+        width: 100%;
+        
+       
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        padding: 10px 0;
+    }
+
+    .content {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        text-align: center;
+    }
+
+    .images {
+        top: 140px;
+        width: 70%;
+        height: auto;
+    }
+
+    .images img {
+        width: 70%;
+        height: auto;
+        position: absolute;
+    }
+
+    .orange {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .self {
+        width:55%  !important;
+        height: auto !important;
+    }
+
+    .content h2 {
+        font-size: 24px;
+        margin-left: 50%;
+        display: block;
+    }
+
+    .content h3 {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+    }
+
+    .content h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
